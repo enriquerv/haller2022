@@ -1,0 +1,434 @@
+@font-face {
+  font-family: Palatino;
+  src: url(fonts/palatino.ttf);
+}
+@font-face {
+  font-family: Myriad;
+  src: url(fonts/myriad.woff);
+}
+
+body{
+    background-color: #193b68;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*NAVBAR*/
+
+li.nav-item {
+	padding: 0 40px;
+}
+#img_last{
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    -webkit-transform: translate(-50%,-100%);
+    -ms-transform: translate(-50%,-100%);
+    -o-transform: translate(-50%,-100%);
+    transform: translate(-50%,-100%);
+}
+
+.main-nav{
+	border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.btn-oe{
+    background-color: #ca2134;
+    border: none;
+    padding: 5px 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+
+.footer{
+    min-height: 200px;
+}
+.sec-footer{
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+    top: 75%;
+    transform: translateY(-50%);
+    font-size: 25px;
+}
+.sec-footer2{
+    margin: 0 auto;
+    padding: 0px 50px;
+}
+.fin-footer{
+    padding: 10px;
+    font-weight: bold;
+}
+.footer-instituto{
+    background-image:url("../images2022/img_footer_haller21.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: Palatino;
+    color: #ffffff;
+}
+.fin-footer div{
+    position: relative;
+    transform: translateY(-85%);
+    top: 50%;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.circleHaller {
+    background-color: #c72242;
+    font-size: 20px;
+    padding: 7px 7px 5px 5px;
+    border-radius: 100%;
+}
+
+/*INDEX*/
+
+
+.intro_video{
+	width: 100%;
+	background: #ffffff00;
+}
+
+.intro_video video{
+	width: 75%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+.inst_video{
+    width: 100%;
+    background: #ffffff;
+}
+
+.inst_video video{
+    width: 100%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+
+.edu_option{
+	min-height: 600px;
+	transition: .8s;
+    cursor: pointer;
+
+}
+
+.oferta_edu .text{
+    color: #fff;
+}
+.oferta_edu .message{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: Myriad;
+    background: rgba(255, 255, 255, 0.49);
+    padding: 75px;
+    font-size: 16px;
+    color: #232323;
+    letter-spacing: 0.4px;
+    font-weight: bold;
+}
+
+.oferta_edu .maternal{
+	background-image: url('../images/acordeon/ac_maternal.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.oferta_edu .maternal .text{
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    font-family: Myriad;
+    margin: 0 0 25px 0px;
+    font-weight: bold;
+}
+
+.oferta_edu .preescolar{
+	background-image: url('../images/acordeon/ac_preescolar.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.oferta_edu .preescolar .text{
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    font-family: Myriad;
+    margin: 0 0 25px 0px;
+    font-weight: bold;
+}
+
+.oferta_edu .ingles{
+	background-image: url('../images/acordeon/ac_ingles.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.oferta_edu .ingles .text{
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    font-family: Myriad;
+    margin: 0 0 25px 0px;
+    font-weight: bold;
+}
+
+.oferta_edu .primaria{
+	background-image: url('../images/acordeon/ac_primaria.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.oferta_edu .primaria .text{
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    font-family: Myriad;
+    margin: 0 0 25px 0px;
+    font-weight: bold;
+}
+
+.oferta_edu .secundaria{
+	background-image: url('../images/acordeon/ac_secu.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.oferta_edu .secundaria .text{
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    font-family: Myriad;
+    margin: 0 0 25px 0px;
+    font-weight: bold;
+}
+
+.oferta_edu .preparatoria{
+	background-image: url('../images/acordeon/ac_prepa.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.oferta_edu .preparatoria .text{
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    font-family: Myriad;
+    margin: 0 0 25px 0px;
+    font-weight: bold;
+}
+
+.cont-mvh{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+}
+
+.cont-mvh img{
+    margin: 0 auto;
+}
+
+.tit-mvh{
+    font-size: 2.5em;
+}
+
+
+/* OFERTA EDUCATIVA */
+
+.img-section{
+    min-height: 800px;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.img-section-maternal{ background-image: url(../images/acordeon/maternal_bg.jpg); }
+.img-section-preescolar{ background-image: url(../images/acordeon/preescolar_bg.jpg); }
+.img-section-ingles{ background-image: url(../images/acordeon/ingles_bg.jpg); }
+.img-section-primaria{ background-image: url(../images/acordeon/primaria_bg.jpg); }
+.img-section-secundaria{ background-image: url(../images/acordeon/secundaria_bg.jpg); }
+.img-section-preparatoria{ background-image: url(../images/acordeon/preparatoria_bg.jpg); }
+
+
+.img-section .title-s1 {
+    letter-spacing: 15px;
+    font-size: 5em;
+    margin-top: 300px;
+    text-shadow: 3px 3px 5px #000;
+}
+
+
+/*nosotros*/
+.mvh-text{
+    width: 50%;
+    font-size: 18px;
+}
+.who{
+    margin: 59px auto;
+    font-family: Myriad;
+    font-size: 20px;
+}
+
+.img-section2{
+    min-height: 300px;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.img-section2 .title-s1 {
+    letter-spacing: 15px;
+    font-size: 5em;
+    text-shadow: 3px 3px 5px #000;
+    top: 30%;
+    transform: translateY(50%);
+}
+.no_a{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.no_a:hover{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.img-section-nosotros{ background-image: url("../images/titulos/titulo_nosotros.jpg"); }
+.img-section-galeria{ background-image: url("../images/titulos/titulo_instalaciones.jpg"); }
+.img-section-idiomas{ background-image: url("../images/titulos/titulo_idiomas.jpg"); }
+.img-section-contacto{ background-image: url("../images/titulos/titulo_contacto.jpg"); }
+.img-section-servicios{ background-image: url("../images/titulos/titulo_servicios.jpg"); }
+.img-section-cadt{ background-image: url("../images/titulos/titulo_CADT.jpg"); }
+.img-section-plataforma{ background-image: url("../images/titulos/titulo_plataforma.jpg"); }
+
+.div-nosotros{
+    /*border: 2px solid;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 300px;
+    padding: 50px 0;*/
+    text-align: center;
+}
+.div-nosotros button{
+    position: relative;
+    /* bottom: 35px; */
+    /* transform: translateX(-50%); */
+    font-size: 14px;
+    padding: 5px 20px;
+    background: #df0124;
+    border: none;
+    margin: -90px 0 0 0;
+}
+
+/*mision, vision, filosofia ...*/
+
+.img-section-mvh{  }
+.mvh_mision{ background-image: url("../images/titulos/titulo_mision.jpg"); }
+.mvh_vision{ background-image: url("../images/titulos/titulo_vision.jpg"); }
+.mvh_filosofia{ background-image: url("../images/titulos/titulo_filosofia.jpg"); }
+.mvh_historia{ background-image: url("../images/titulos/titulo_historia.jpg"); }
+.mvh_biografia{ background-image: url("../images/titulos/titulo_biografia.jpg"); }
+.mvh_valores{ background-image: url("../images/titulos/titulo_valores.jpg"); }
+
+/*galería*/
+
+.div-galeria{
+    margin: 0 auto;
+    text-align: center;
+    min-height: 150px;
+    padding: 10px 0;
+    width: 100%
+}
+
+
+/*Servicios*/
+.img-servicios{
+    width: 75%;
+}
+
+.div-servicios{
+    height: 300px;
+    text-align: center;
+}
+.div-servicios .p-text{
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+
+/* Contacto */
+#map{
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+
+.circMaternal{ font-size: 50px; color: #ed008c; }
+.circPreescolar{ font-size: 50px; color: #015b7e; }
+.circIngles{ font-size: 50px; color: #a1410e; }
+.circPrimaria{ font-size: 50px; color: #005826; }
+.circSecundaria{ font-size: 50px; color: #8b0118; }
+.circPrepa{ font-size: 50px; color: #0d014d; }
+
+.setImages{
+    cursor: pointer;
+}
+
+
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 20%;
+    float: left;
+}
+
+.col-half-offset{
+    margin-left:4.166666667%
+}

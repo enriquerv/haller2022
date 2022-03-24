@@ -65,6 +65,13 @@ class UsersController extends Controller
      */
     public function index()
     {
+        $word = '';
+        $active = '';
+        $model = '';
+        $view = '';
+        $columns = '';
+        $select = '';
+        $actions = '';
         $active = $this->active;
         $model = $this->model;
         $view = 'index';
@@ -90,6 +97,13 @@ class UsersController extends Controller
      */
     public function create()
     {
+        $word = '';
+        $active = '';
+        $model = '';
+        $view = '';
+        $columns = '';
+        $select = '';
+        $actions = '';
         $active = $this->active;
         $model = $this->model;
         $word = trans('module_'.$this->active.'.module_title');
@@ -145,6 +159,13 @@ class UsersController extends Controller
      */
     public function show($id)
     {
+        $word = '';
+        $active = '';
+        $model = '';
+        $view = '';
+        $columns = '';
+        $select = '';
+        $actions = '';
         $item = MasterViewModel::find($id);
 
         $active = $this->active;
@@ -161,6 +182,13 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
+        $word = '';
+        $active = '';
+        $model = '';
+        $view = '';
+        $columns = '';
+        $select = '';
+        $actions = '';
         $item = MasterModel::find($id);
 
         $active = $this->active;
@@ -238,6 +266,13 @@ class UsersController extends Controller
      */
     public function getRestore()
     {
+        $word = '';
+        $active = '';
+        $model = '';
+        $view = '';
+        $columns = '';
+        $select = '';
+        $actions = '';
         $active = $this->active;
         $model = $this->model;
         $view = 'delete';

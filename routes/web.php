@@ -26,8 +26,34 @@ Route::group(array('middleware' => 'langMiddleware'), function () {
      * Web Site
      */
     Route::get('/', array('as' => 'home', 'uses' => 'FrontEndController@index'));
-    Route::get('contact', array('as' => 'contact', 'uses' => 'FrontEndController@getContact'));
-    Route::post('contact', array('as' => 'contact', 'uses' => 'FrontEndController@postContact'));
+    Route::get('nosotros', array('as' => 'home', 'uses' => 'FrontEndController@nosotros'));
+    Route::get('galeria', array('as' => 'galeria', 'uses' => 'FrontEndController@galeria'));
+    Route::get('servicios', array('as' => 'servicios', 'uses' => 'FrontEndController@servicios'));
+    Route::get('contacto', array('as' => 'contacto', 'uses' => 'FrontEndController@contacto'));
+    Route::get('blog', array('as' => 'blog', 'uses' => 'FrontEndController@blog'));
+    Route::get('blog-detail/{id}', array('as' => 'blog-detail', 'uses' => 'FrontEndController@blog_detail'));
+    Route::get('postContact', array('as' => 'postContact', 'uses' => 'FrontEndController@postContact'));
+
+    $route = 'oferta_educativa';
+    $controller = 'FrontEndController@';
+    Route::group(array('prefix' => $route), function () use ($route, $controller) {
+        Route::get('maternal', array('as' => 'maternal', 'uses' => $controller.'maternal'));
+        Route::get('preescolar', array('as' => 'preescolar', 'uses' => $controller.'preescolar'));
+        Route::get('english', array('as' => 'english', 'uses' => $controller.'english'));
+        Route::get('primaria', array('as' => 'primaria', 'uses' => $controller.'primaria'));
+        Route::get('secundaria', array('as' => 'secundaria', 'uses' => $controller.'secundaria'));
+        Route::get('preparatoria', array('as' => 'preparatoria', 'uses' => $controller.'preparatoria'));
+    });
+
+    $route = 'servicios';
+    $controller = 'FrontEndController@';
+    Route::group(array('prefix' => $route), function () use ($route, $controller) {
+        Route::get('plataforma', array('as' => 'plataforma', 'uses' => $controller.'plataforma'));
+        Route::get('idiomas', array('as' => 'idiomas', 'uses' => $controller.'idiomas'));
+        Route::get('cadt', array('as' => 'cadt', 'uses' => $controller.'cadt'));
+        Route::get('estancia', array('as' => 'estancia', 'uses' => $controller.'estancia'));
+    });
+
 
     /*
      * Purchases
@@ -57,7 +83,7 @@ Route::group(array('middleware' => 'langMiddleware'), function () {
         // Suppliers
         Route::get('register-supplier', array('as' => 'suppliers.create', 'uses' => 'SuppliersController@create'));
         Route::post('register-supplier', array('as' => 'suppliers.store', 'uses' => 'SuppliersController@store'));
-    
+
         // Recover password
         Route::get('forgot-password',array('as' => 'forgot-password','uses' => 'AuthController@getForgotPassword'));
         Route::post('forgot-password','AuthController@postForgotPassword');
@@ -117,6 +143,21 @@ Route::group(array('middleware' => 'langMiddleware'), function () {
     // Route::group(array('prefix' => 'admin'), function () {
     	// Dashboard
     	Route::get('/', array('as' => 'dashboard', 'uses' => 'DashboardController@index'));
+
+        // Blogs
+        $route = 'blogs';
+        $controller = 'BlogsController';
+        Route::group(array('prefix' => $route), function () use ($route, $controller) {
+            Route::get('deleted', array('as' => $route.'.deleted', 'uses' => $controller.'@getRestore'));
+            Route::patch('restore', array('as' => $route.'.restore', 'uses' => $controller.'@postRestore'));
+            Route::get('/', array('as' => $route, 'uses' => $controller.'@index'));
+            Route::delete('delete', array('as' => $route.'.delete', 'uses' => $controller.'@destroy'));
+            Route::get('create', array('as' => $route.'.create', 'uses' => $controller.'@create'));
+            Route::post('create', array('as' => $route.'.store', 'uses' => $controller.'@store'));
+            Route::get('{id}/edit', array('as' => $route.'.edit', 'uses' => $controller.'@edit'));
+            Route::put('{id}/edit', array('as' => $route.'.update', 'uses' => $controller.'@update'));
+            Route::get('{id}', array('as' => $route.'.show', 'uses' => $controller.'@show'));
+        });
 
         // Countries
         $route = 'countries';

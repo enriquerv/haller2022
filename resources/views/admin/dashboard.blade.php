@@ -1,18 +1,18 @@
 @extends('admin.layout.principal')
 
-@section('title', '| Dashboard')
+@section('title', '| Administrador')
 
 @section('styles')
 @endsection
 
-@section('page-header', 'Dashboard')
+@section('page-header', 'Administrador')
 
 @section('panel-heading')
-	<i class="fa fa-user fa-fw"></i> Dashboard
+	<i class="fa fa-folder fa-fw"></i> Administrador
 @endsection
 
 @section('content')
-	<p>Dashboard</p>
+	<p class="h3">Bienvenido al administrador de contenidos del haller</p>
 @endsection
 
 @section('scripts')

@@ -4,4 +4,4 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand" href="{{ URL::route('dashboard') }}"><img src="{{ URL::to('assets/images/logo.svg') }}" alt="{{ env('APP_NAME') }}" class="navbar-logo"></a>
+<a class="navbar-brand" href="{{ URL::route('dashboard') }}"><img src="{{ URL::to('assets/images/logo1_1p.png') }}" alt="{{ env('APP_NAME') }}" class="navbar-logo"></a>

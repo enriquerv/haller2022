@@ -53,7 +53,7 @@
         <div id="wrapper">
 
             {{-- Navigation --}}
-            <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
                     @include('admin.layout.menus.logo')
                 </div>
@@ -100,7 +100,7 @@
             {{-- /#page-wrapper --}}
 
         </div>
-        
+
         {{-- /#wrapper --}}
 
         {{-- jQuery --}}
@@ -123,7 +123,7 @@
 
         {{-- Bootstrap Wizard --}}
         {{ Html::script('assets/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js') }}
-        
+
         {{-- DataTables --}}
         {{ Html::script('https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js') }}
 
@@ -147,13 +147,13 @@
         {{ Html::script("assets/plugins/timepicker/timepicker.call.js") }}
 
         {{-- CkEditor plugin --}}
-        {{ Html::script("assets/plugins/ckeditor/ckeditor.js") }}
+        {{-- {{ Html::script("assets/plugins/ckeditor/ckeditor.js") }} --}}
         {{-- Include CKEditor and jQuery adapter --}}
-        {{ Html::script("assets/plugins/ckeditor/adapters/jquery.js") }}
+        {{-- {{ Html::script("assets/plugins/ckeditor/adapters/jquery.js") }} --}}
 
         {{-- Google Maps --}}
-        {{ Html::script("https://maps.googleapis.com/maps/api/js?key=". env('GOOGLE_MAPS_KEY') ."&libraries=places&callback=initAutocomplete", ['async', 'defer']) }}
-        {{ Html::script("assets/plugins/google-maps/google_maps.js") }}
+        {{-- {{ Html::script("https://maps.googleapis.com/maps/api/js?key=". env('GOOGLE_MAPS_KEY') ."&libraries=places&callback=initAutocomplete", ['async', 'defer']) }} --}}
+        {{-- {{ Html::script("assets/plugins/google-maps/google_maps.js") }} --}}
 
         @yield('scripts')
 

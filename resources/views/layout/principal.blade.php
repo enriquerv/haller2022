@@ -19,6 +19,7 @@
         {{ Html::style( 'assets/css/core.css?'.filemtime('assets/css/core.css') ) }}
         {{-- Custom CSS file --}}
         {{ Html::style( 'assets/css/custom.css?'.filemtime('assets/css/custom.css') ) }}
+        {{ Html::style( 'assets/css/custom_haller.css?'.filemtime('assets/css/custom.css') ) }}
         <script> var direction = "{{ config('app.path') }}" </script>
         @yield('styles')
     </head>
@@ -38,6 +39,9 @@
         {{ Html::script('assets/plugins/bootstrap/popper.js') }}
         {{-- Bootstrap Wizard v1.4.2 --}}
         {{ Html::script('assets/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js') }}
+
+        {{ Html::script('assets/js/custom_haller.js') }}
+
         {{-- DataTables v1.10.19 --}}
         {{ Html::script('assets/plugins/datatables/jquery.dataTables.min.js') }}
         {{-- FormValidation v0.8.1 --}}

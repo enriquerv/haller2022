@@ -23,9 +23,21 @@
         {{-- /.dropdown-user --}}
     </li>
     {{-- /.dropdown --}}
-    <li>
+    {{-- <li>
         <a href="{{ url('lang', [\App::getLocale() == 'es' ? 'en' : 'es']) }}">
             {{ \App::getLocale() == 'es' ? 'Eng' : 'Esp' }} <i class="fa fa-flag fa-fw"></i>
         </a>
-    </li>
+    </li> --}}
 </ul>
+
+
+
+<style>
+    .navbar-static-top{
+        background-color: #193b68;
+        color: #fff;
+    }
+    .dropdown-toggle{
+        color: #fff;
+    }
+</style>
