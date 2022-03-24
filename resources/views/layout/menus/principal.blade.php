@@ -39,7 +39,7 @@
                     <a class="nav-link" href="{{ env('APP_URL') }}/nosotros">NOSOTROS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#ofed">OFERTA EDUCATIVA</a>
+                    <a class="nav-link" href="{{ env('APP_URL') }}/#ofed">OFERTA EDUCATIVA</a>
                 </li>
             </ul>
         </div>
