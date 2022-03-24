@@ -20,7 +20,7 @@
         {{-- Custom CSS file --}}
         {{ Html::style( 'assets/css/custom.css?'.filemtime('assets/css/custom.css') ) }}
         {{ Html::style( 'assets/css/custom_haller.css?'.filemtime('assets/css/custom.css') ) }}
-        <script> var direction = "{{ config('app.path') }}" </script>
+        <script> var direction = "{{ env('APP_URL') }}/" </script>
         @yield('styles')
     </head>
     <body>
