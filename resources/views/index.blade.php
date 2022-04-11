@@ -83,21 +83,21 @@
 
           <div class="col-4" style="float:left">
            <div class="card mb-2 containerImg">
-              <img src="{{ env('APP_URL') }}/assets/images2022/cards_niveles_maternal.jpg" width="100%" class="img-ofed" onclick="goTo('maternal')">
+              <img src="{{ env('APP_URL') }}/assets/images2022/cards_niveles_propu_maternal.png" width="100%" class="img-ofed" onclick="goTo('maternal')">
               <div class="centered dnone">VER MÁS</div></a>
             </div>
           </div>
 
           <div class="col-4" style="float:left">
             <div class="card mb-2 containerImg">
-              <img src="{{ env('APP_URL') }}/assets/images2022/cards_niveles_preescolar.jpg" width="100%" class="img-ofed" onclick="goTo('preescolar')">
+              <img src="{{ env('APP_URL') }}/assets/images2022/cards_niveles_propu_preescolar.png" width="100%" class="img-ofed" onclick="goTo('preescolar')">
               <div class="centered dnone">VER MÁS</div>
             </div>
           </div>
 
           <div class="col-4" style="float:left">
             <div class="card mb-2 containerImg">
-              <img src="{{ env('APP_URL') }}/assets/images2022/cards_niveles_english.jpg" width="100%" class="img-ofed" onclick="goTo('english')">
+              <img src="{{ env('APP_URL') }}/assets/images2022/cards_niveles_propu_english.png" width="100%" class="img-ofed" onclick="goTo('english')">
               <div class="centered dnone">VER MÁS</div>
             </div>
           </div>
@@ -110,21 +110,21 @@
 
           <div class="col-4" style="float:left">
             <div class="card mb-2 containerImg">
-              <img src="{{ env('APP_URL') }}/assets/images2022/cards_niveles_primaria.jpg" width="100%" class="img-ofed" onclick="goTo('primaria')">
+              <img src="{{ env('APP_URL') }}/assets/images2022/cards_niveles_propu_primaria.png" width="100%" class="img-ofed" onclick="goTo('primaria')">
               <div class="centered dnone">VER MÁS</div>
             </div>
           </div>
 
           <div class="col-4" style="float:left">
             <div class="card mb-2 containerImg">
-              <img src="{{ env('APP_URL') }}/assets/images2022/cards_niveles_secundaria.jpg" width="100%" class="img-ofed" onclick="goTo('secundaria')">
+              <img src="{{ env('APP_URL') }}/assets/images2022/cards_niveles_propu_secundaria.png" width="100%" class="img-ofed" onclick="goTo('secundaria')">
               <div class="centered dnone">VER MÁS</div>
             </div>
           </div>
 
           <div class="col-4" style="float:left">
             <div class="card mb-2 containerImg">
-              <img src="{{ env('APP_URL') }}/assets/images2022/cards_niveles_prepa.jpg" width="100%" class="img-ofed" onclick="goTo('preparatoria')">
+              <img src="{{ env('APP_URL') }}/assets/images2022/cards_niveles_propu_prepa.jpg" width="100%" class="img-ofed" onclick="goTo('preparatoria')">
               <div class="centered dnone">VER MÁS</div>
             </div>
           </div>
