@@ -33,7 +33,7 @@
         <div class="col-md-6">
             <h2 class="bolder text-center mb-4">Visión</h2>
             <p class="text-center">
-                Propiciamos el desarrolla de un ser humano integral a través de elementos formativos e informativos que favorezcan la mejora personal continua para ser agentes de cambio en su medio de influencia.
+                Creemos en la calidad y en la productividad como bases sólidas del crecimiento que se anhela continuamente.
             </p>
         </div>
     </div>
