@@ -19,7 +19,7 @@
         {{ Html::style( 'assets/css/core.css?'.filemtime('assets/css/core.css') ) }}
         {{-- Custom CSS file --}}
         {{ Html::style( 'assets/css/custom.css?'.filemtime('assets/css/custom.css') ) }}
-        {{ Html::style( 'assets/css/custom_haller.css?'.filemtime('assets/css/custom.css') ) }}
+        {{ Html::style( 'assets/css/custom_haller.css?'.filemtime('assets/css/custom_haller.css') ) }}
         <script> var direction = "{{ env('APP_URL') }}/" </script>
         @yield('styles')
     </head>

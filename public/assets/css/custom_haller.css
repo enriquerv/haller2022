@@ -432,3 +432,33 @@ li.nav-item {
 .col-half-offset{
     margin-left:4.166666667%
 }
+
+
+
+
+
+
+
+/*RESPONSIVE*/
+
+
+@media screen and (max-width: 917px) {
+    .img_footer{ margin-right: 3px !important; }
+}
+
+
+@media screen and (max-width: 767px) {
+    .email_footer{ display: none; }
+    .email_footer_2 { display: block !important; }
+
+    .tel_footer{ display: none; }
+    .tel_footer_2 { display: block !important; }
+
+    .img_nav_sm img{ width: 60px !important; }
+
+    .nav_haller_normal{ display: none; }
+
+    .nav_haller_responsive{ display: block !important; padding-bottom: 40px; }
+
+    .logo_prin{ width: 90px; }
+}
